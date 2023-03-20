@@ -2,7 +2,7 @@ import React from 'react'
 
 function ChannelCreate() {
   return (
-    <div className='bg h-screen'>
+    <div className=' h-screen bg-[#131324]'>
         
     </div>
   )
