@@ -6,7 +6,13 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.users{
+  overflow: auto;
+  height: 78.3vh;
+}
+.container{
+  grid-template-columns: 28% 72%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -51,4 +57,27 @@
 
 .App-link {
   color: #61dafb;
+}
+
+
+/* style side scroll  */
+/* width */
+.users::-webkit-scrollbar {
+  width: 3px;
+  
+}
+
+/* Track */
+.users::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+.users::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.users::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
