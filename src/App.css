@@ -1,27 +1,28 @@
-
-
 .commonInputs,
-.a{
+.a {
 
-    background-color: transparent;
-    padding: 4%;
-    border: 0.1rem solid #3b00dd;
-    border-radius: 0.4rem;
-    color: white;
-    width: 100%;
-    font-size: 1rem;
+  background-color: transparent;
+  padding: 4%;
+  border: 0.1rem solid #3b00dd;
+  border-radius: 0.4rem;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
 
 }
-.a{
- background-color: rgb(78, 14, 255); 
- color: white;
- 
+
+.bg {
+
+  background-color: rgb(78, 14, 255);
+}
+
+.a {
+  background-color: rgb(78, 14, 255);
+  color: white;
+
 }
 
 
 .App-link {
   color: #61dafb;
 }
-
-
-
