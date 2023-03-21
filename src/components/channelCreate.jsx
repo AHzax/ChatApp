@@ -1,6 +1,7 @@
 import React from 'react'
 import img from "../images/img1.png"
-import card1 from "../images/card-1.png"
+import gif from '../images/gif.gif'
+
 function ChannelCreate() {
 
   const data = [
@@ -176,7 +177,7 @@ function ChannelCreate() {
     },
   ]
   return (
-    <div className=' h-screen bg-[#131324]'>
+    <div className=' h-screen bg-[rgb(19,19,36)] flex items-center'>
       <div className="sideList w-1/4 bg-[#00000076] ml-28 ">
         <div className="logo flex  justify-center items-center w-14 h-14 ml-[10rem] pt-6">
           <img src={img} className="h-full w-full " alt="" />
@@ -190,7 +191,7 @@ function ChannelCreate() {
               data.map((obj) => {
                 return (
 
-                  <div className='card-1 flex items-center bg-[#272829] p-3 rounded-md'>
+                  <div className='card-1 flex items-center bg-[#272829] p-4 rounded-lg'>
                     <img src={obj.img} className='w-[4rem] h-[4rem] ' />
                     <h1 className='name text-white text-[1.7rem] font-bold ml-5'>{obj.name}</h1>
                   </div>
@@ -198,16 +199,30 @@ function ChannelCreate() {
               })
             }
           </div></div>
-        <div className='card-1  flex items-center bg-[#272829] p-3 border-t-white'>
+        <div className='card-1  flex items-center bg-[#272829] p-3 border-t-white mt-1'>
           <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" className='w-[4rem] h-[4rem] rounded-full' />
           <h1 className='name text-white text-[1.7rem] font-bold ml-5'>abdullah</h1>
         </div>
 
+      </div>
 
 
+      <div className='bg-[#080809] h-full w-[60%] flex items-center justify-center '>
+
+
+        <div className='flex flex-col items-center'>
+
+          <img src={gif} alt="" />
+          <div className='text-center '>
+            <h1 className='text-white text-5xl font-bold'>Welcome, <span className='text-[#c0afd1]'>abdullah!</span></h1>
+            <p className='mt-2 text-white text-xl leading-3 font-bold'>Please select a chat to Start messaging.</p>
+          </div>
+        </div>
 
 
       </div>
+     
+
     </div>
   )
 }
